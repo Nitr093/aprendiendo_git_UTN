@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+	color: #000;
+	background: #332F29;
+}
+
+#contenedor {
+	max-width: 800px;
+	background: #ecdb6c;
+	margin-right: auto;
+	margin-left: auto;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+nav {
+	background: #06f63a;
+	float: left;
+	width: 100%;
+	height: 20%;
+}
+
+ul {
+	list-style-type: none;
+}
+
+li{
+	padding: 5px;
+}
+
+a {
+	color: #000000;
+	text-decoration: none;
+	font-size: larger;
+	font-weight: bold;
+	transition:all 0.3s ease;
+}
+
+a:hover{
+	font-size: x-large;
+	background-color: rgb(254, 0, 0);
+}
+
+section {
+	background: #5153ff;
+	float: left;
+	width: 100%;
+	height: 30%;
+}
+
+section p{
+	color: rgb(7, 248, 35);
+}
+
+section h2{
+	color: rgb(7, 248, 35);
+}
+
+aside {
+	background: #CCC59E;
+	float: right;
+	width: 100%;
+	height: 40%;
+}
+
+h2 {
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	padding-left: 10px;
+}
+
+p{
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	letter-spacing: 0.02em;
+	text-align: justify;
+	padding: 0 25px 0 25px;	
+}
+
+p::first-letter{
+	font-size: 1.2em;
+	font-weight: 500;	
+}
+
+h1 {
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	text-transform: uppercase;
+	height: 10%;
+}
+  </style>
+</head>
+<body>
+  <div id="contenedor">
+    <h1>Optimizando con CSS </h1>
+    <nav>
+      <ul>
+        <li><a href="https://cursos.utnba.centrodeelearning.com/mod/assign/view.php?id=362384">Enlace 1</a></li>
+        <li><a href="https://niccs.cisa.gov/workforce-development/cyber-career-pathways-tool?selected-role=IN-WRL-001">Enlace 2</a></li>
+        <li><a href="https://auth.netacad.com/auth/realms/skillsforall/login-actions/authenticate?client_id=b2e-marketplace&tab_id=M4cViQk8oHk&client_data=eyJydSI6Imh0dHBzOi8vd3d3Lm5ldGFjYWQuY29tL2xhdW5jaD9pZD04MGMxNTZiYy04NGE0LTQ3YzktYTIzMy01ZWFmZTdiZGRlODImdGFiPWN1cnJpY3VsdW0mdmlldz04ODllMDg4MS1jNzI1LTVmMzMtODBmNS1kNGQyMTM0ZTlhODMiLCJydCI6ImNvZGUiLCJybSI6ImZyYWdtZW50Iiwic3QiOiI5NWE2NTgwYi0zYTYwLTQ3ODctYTc0MS1jZWY4YmZhMzY3YjQifQ">Enlace 3</a></li>
+      </ul>
+    </nav>
+    <section>
+      <h2>Ejemplo de Media Queries </h2>
+      <p> El layout de esta pagina se adapta segun el dispositivo que utilices, puedes usar tu propio smartphone o un
+        emulador.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.</p>
+      </section>
+    <aside>
+      <h2> Contenido adicional </h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
+      </aside>
+  
+  </div>
+  
+</body>
+</html>
