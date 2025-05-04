@@ -1,0 +1,187 @@
+nav {
+    background-color: greenyellow;
+    border-radius: 30px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 50px 0 50px;
+    text-align: center;
+    overflow: hidden;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    letter-spacing: 0.15em;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: small;
+}
+
+nav ul li:hover {
+    background-color: rgba(0, 255, 255, 0.1);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    transform: scale(1.2);
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.colortextboton:hover {
+    color: rgb(229, 255, 0);
+    padding: 2px;
+    border-radius: 15px;
+    border: 2px solid rgb(0, 0, 0);
+    overflow: hidden;
+}
+
+.boton:hover {
+    background-color: rgba(0, 0, 0, 0.664);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    transform: scale(1.2);
+    transition: all 0.3s ease;
+    overflow: hidden;
+    
+}
+
+.comic-relief-regular {
+    font-family: "Comic Relief", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.boldonse-regular {
+    font-family: "Boldonse", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+.sour-gummy {
+    font-family: "Sour Gummy", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.cascadia-code {
+    font-family: "Cascadia Code", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+.cascadia-code-cuerpo {
+    font-family: "Cascadia Code", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 0.95em;
+}
+
+.titulopatrocinadores {
+
+    border-radius: 30px;
+    border: 1px groove black;
+    color: rgb(0, 7, 100);
+    font-style: italic;
+}
+
+/* .carousel {
+     width: 70%;
+    height: 40%; 
+     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    place-content: center; 
+    
+  }  */
+
+.carousel-item {
+    height: 400px;
+}
+
+section {
+    overflow: hidden;
+}
+
+.laseccion {
+    background-color: rgba(120, 120, 255, 0.055);
+    border-radius: 20px;
+    /* margin: 10px; */
+    font-size: 2em;
+    transform: rotateZ(355deg);
+    padding: 10px;
+    color: black;
+    letter-spacing: 0.01em;    
+    -webkit-box-shadow: 1px 1px 2px #000;
+    
+    /* font-style: italic; */
+}
+
+#primero {
+    animation-name: Ingreso1;
+    animation-duration: 2s;
+    animation-fill-mode: none;
+    transition: all 0.3s ease-in;
+}
+
+#segundo {
+    animation-name: Ingreso2;
+    animation-duration: 3s;
+    animation-fill-mode: none;
+    transition: all 0.3s ease-in;
+}
+
+#tercero {
+    animation-name: Ingreso3;
+    animation-duration: 4s;
+    animation-fill-mode: none;
+    transition: all 0.3s ease-in;
+}
+
+@keyframes Ingreso1 {
+    0% {
+        margin-left: 100%;
+        font-size: 0%;
+    }
+
+    100% {
+        font-size: 100%;
+    }
+}
+
+@keyframes Ingreso2 {
+    0% {
+        margin-left: 100%;
+        font-size: 0%;
+    }
+
+    100% {
+        font-size: 100%;
+    }
+}
+
+@keyframes Ingreso3 {
+    0% {
+        margin-left: 100%;
+        font-size: 0%;
+    }
+
+    100% {
+        font-size: 100%;
+    }
+}
