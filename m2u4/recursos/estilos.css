@@ -35,6 +35,10 @@ nav ul li:hover {
     overflow: hidden;
 }
 
+.colortextboton{
+    box-sizing: border-box;
+}
+
 .colortextboton:hover {
     color: rgb(229, 255, 0);
     padding: 2px;
