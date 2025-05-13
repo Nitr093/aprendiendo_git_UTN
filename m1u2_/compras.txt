@@ -1,1 +1,0 @@
-print ("SUPERMERCADO $50")
