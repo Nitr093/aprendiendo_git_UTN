@@ -50,24 +50,32 @@ h1 {
     display: flex !important;
     justify-content: end !important;
     padding-right: 10px !important;
+    font-size: 1.4em;
 }
 
 
-#fondo-main{
-    margin: 10px 0 10px 0;
-    height: 100px;
+#fondo-main {
+    padding: 0 0 0 10px;
+    height: 80px;
     border-bottom: 1px solid white;
     background: #5c5c5c;
-background: radial-gradient(circle, rgba(92, 92, 92, 1) 0%, rgba(56, 56, 56, 1) 23%, rgba(31, 31, 31, 1) 43%, rgba(26, 26, 26, 1) 63%, rgba(18, 18, 18, 1) 86%, rgba(0, 0, 0, 1) 100%);
+    background: radial-gradient(circle, rgba(92, 92, 92, 1) 0%, rgba(56, 56, 56, 1) 23%, rgba(31, 31, 31, 1) 43%, rgba(26, 26, 26, 1) 63%, rgba(18, 18, 18, 1) 86%, rgba(0, 0, 0, 1) 100%);
+
+}
+
+#fondo-main h2 {
+    font-size: 1.4em;
+
 }
 
 h2 {
     font-family: "Boldonse", system-ui !important;
     color: rgb(173, 247, 2) !important;
     letter-spacing: 0.2em !important;
-    place-content: center !important;    
-    
-    padding: 25px 0!important;
+    place-content: center !important;
+    text-align: center;
+    padding: 10px 0 !important;
+
 }
 
 header {
@@ -121,23 +129,24 @@ nav ul li a i:last-child {
     margin: 0 auto;
 }
 
-footer{
-        background-color: #4e4e4e;
-        color: greenyellow;
-        margin: 2px 0 0 0;
-        padding: 10px 0;
-        text-align: center;
-    }
+footer {
+    background-color: #4e4e4e;
+    color: greenyellow;
+    margin: 2px 0 0 0;
+    padding: 10px 0;
+    text-align: center;
+}
 
-.card{
-        width: 14rem;
-    }
+.card {
+    width: 14rem;
+}
 
-main{
-        background-color: rgb(26, 26, 26);
-    }
+main {
+    background-color: rgb(26, 26, 26);
+    margin: 0 auto;
+}
 
- /* .contenedor-imagen {
+/* .contenedor-imagen {
             position: relative;
             width: 100%;
             max-width: 600px;
@@ -150,36 +159,53 @@ main{
             display: block;
         } */
 
-.cuerpo-main{
-    
+.cuerpo-main {
+
     max-width: 960px;
-    margin: 0 auto;   
-    position: relative; 
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
 }
 
-.cuerpo-main a{
+
+
+
+.cuerpo-main a {
     text-decoration: none;
-    display: flex; 
+    display: flex;
     justify-content: center;
+
 }
 
 .cuerpo-main a img {
-            
-            height: auto;
-            display: block;
-        }
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 
 .texto-con-fondo {
-            position: absolute;
-            bottom: 0;
-            left: 3;
-            right: 3;
-            background-color: rgba(0, 0, 0, 0.6);
-            color: white;
-            padding: 5px;
-            text-align: center;
-            width: 768px;
-        }
+    position: absolute;
+    bottom: 0;
+    left: 3;
+    right: 3;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 5px;
+    text-align: center;
+    width: 100%;
+}
+
+.texto-con-fondo h3 {
+    font-size: 0.8em;
+
+}
+
+.texto-con-fondo p {
+    font-size: 0.5em;
+
+}
+
 
 @media screen and (min-width:961px) {
 
@@ -191,6 +217,15 @@ main{
         font-family: "Boldonse", system-ui;
         color: rgb(173, 247, 2);
         letter-spacing: 0.2em;
+        font-size: 2em;
+    }
+
+    h2 {
+        font-family: "Boldonse", system-ui !important;
+        color: rgb(173, 247, 2) !important;
+        letter-spacing: 0.2em !important;
+        padding: 25px 0 !important;
+        text-align: start;
     }
 
     header {
@@ -234,11 +269,11 @@ main{
         font-size: 20px;
     }
 
-    main{
+    main {
         background-color: rgb(26, 26, 26);
     }
 
-    footer{
+    footer {
         background-color: #4e4e4e;
         color: greenyellow;
         margin: 2px 0 0 0;
@@ -246,13 +281,31 @@ main{
         text-align: center;
     }
 
-    .card{
+    .card {
         width: 18rem;
     }
 
-#fondo-main{
-    margin: 10px 0 10px 0;
-    height: 100px;
+    .holder li a{
+        font-size: 1.1em;
+    }
+
+    #fondo-main {
+        padding: 0 0 0 10px;
+        height: 100px;
+    }
+
+    #fondo-main h2 {
+        font-size: 2em;
+    }
+
+    .texto-con-fondo h3 {
+    font-size: 1.2em;
+
 }
-/*aca cierra el responsive de min width 961px*/
+
+.texto-con-fondo p {
+    font-size: 1em;
+
+}
+    /*aca cierra el responsive de min width 961px*/
 }
