@@ -258,6 +258,18 @@ main {
     list-style: none;
 }
 
+.ContainerSoft h4 {
+    color: rgb(233, 233, 233);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+.ContainerSoft ol li p {
+    color: aliceblue;
+    font-style: italic;   
+}
+
 }
 
 
