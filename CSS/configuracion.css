@@ -71,63 +71,82 @@ h1 {
 h2 {
     font-family: "Boldonse", system-ui !important;
     color: rgb(173, 247, 2) !important;
-    letter-spacing: 0.2em !important;
-    place-content: center !important;
-    text-align: center;
-    padding: 21px 0 !important;
-
+    letter-spacing: 0.2em !important;      
+    display: flex;
+    justify-content: center;
+    animation-name: Ingreso;
+    animation-duration: 2s;
+    animation-fill-mode: none;
+    transition: all 0.3s ease-in;
 }
+
+
+
+@keyframes Ingreso{
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
+}
+
+
 
 
 header {
     padding: 16px 0;
     /*1rem 0*/
     border-bottom: 2px solid rgb(173, 247, 2);
-    background-image: url("wallpaperflare.com_wallpaper.jpg");
+    background-image:  url("wallpaperflare.com_wallpaper.jpg");
 
 }
 
-nav {
+.barraInicio {
     background-color: black;
 }
 
-nav ul {
+.barraInicio ul {
     list-style: none;
     display: flex;
     flex-direction: column;
 
 }
 
-nav ul li {
+.barraInicio ul li {
     padding-right: 47px;
     text-align: center;
+    font-family: "Cascadia Code", sans-serif;
 }
 
-nav ul li a {
+.barraInicio ul li a {
     text-decoration: none;
     color: #e0e0e0;
 }
 
-nav ul li a:hover {
+.barraInicio ul li a:hover {
     background-color: rgba(200, 255, 2, 0.25);
     border-radius: 7px;
     padding: 2px;
     text-transform: uppercase;
 }
 
-nav ul li a i {
+.barraInicio ul li a i {
     color: rgb(35, 167, 255);
 
 }
 
-nav ul li a i:last-child {
+.barraInicio ul li a i:last-child {
     color: rgb(0, 255, 21);
     font-size: 13.5px;
 }
 
-.holder {
-    max-width: 960px;
-    margin: 0 auto;
+.activo {
+    background-color: rgba(200, 255, 2, 0.25);
+    border-radius: 7px;
+    padding: 2px;
+    text-transform: uppercase;
 }
 
 footer {
@@ -135,7 +154,18 @@ footer {
     color: greenyellow;
     margin: 2px 0 0 0;
     padding: 10px 0;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    font-style: italic;
+    gap: 30px;
     text-align: center;
+}
+
+
+footer a {
+    text-decoration: none;
+    color: greenyellow;
 }
 
 .card {
@@ -147,18 +177,6 @@ main {
     margin: 0 auto;
 }
 
-/* .contenedor-imagen {
-            position: relative;
-            width: 100%;
-            max-width: 600px;
-            margin: 0 auto 30px;
-        }
-
-        .contenedor-imagen img {
-            width: 100%;
-            height: auto;
-            display: block;
-        } */
 
 .cuerpo-main {
 
@@ -214,15 +232,16 @@ main {
 }
 
 .ContainerSoft h4 {
-    color: rgb(233, 233, 233);
+    color: rgb(0, 0, 0);
     text-align: center;
     text-transform: uppercase;
+    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
 }
 
 
 .ContainerSoft ol li p {
     color: aliceblue;
-    font-style: italic;   
+    font-style: italic;
 }
 
 .ContainerSoft ol li img {
@@ -231,44 +250,155 @@ main {
     border-radius: 10px;
 }
 
-.ContainerSoft ol{
+.ContainerSoft ol {
     border: 1.4px solid whitesmoke;
     margin: 7px;
 }
 
-.CajasHijas{
+.CajasHijas {
     width: 30em;
 }
 
-.ContainerSoft ol li{
-    color: greenyellow; 
-    list-style: disc;  
-     
-     
+.ContainerSoft ol li {
+    color: greenyellow;
+    list-style: disc;
 }
 
+/*Aca inicia configuracion estilos para Nosotros*/
 
-@media screen and (max-width:960px){
-
-.ContainerSoft{
-    display: table;
+.padre-novedades {
+    display: flex;
+    gap: 3%;
 }
-.ContainerSoft ol{
+
+.hijo-novedades h4 {
+    text-decoration: underline;
+    text-decoration-color: greenyellow;
+    font-weight: bold;
+}
+
+.hijo-novedades {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+}
+
+.hijo-novedades h4,
+.hijo-novedades p {
     text-align: center;
-    list-style: none;
+    font-family: "Comic Relief", system-ui;
+    color: rgb(168, 255, 255);
 }
 
-.ContainerSoft h4 {
-    color: rgb(233, 233, 233);
-    text-align: center;
-    text-transform: uppercase;
+.formulario {
+    padding-right: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.formulario p {
+    color: greenyellow;
+    display: flex;
+    font-style: italic;
+}
+
+.formulario label {
+    width: 80px;
+}
+
+.formulario p input {
+    background-color: #aaaaaa8c;
+    width: 60%;
+    border-radius: 5px;
+    color: #e0e0e0;
+}
+
+.formulario input::placeholder {
+    color: #e0e0e0;
+    font-size: 12px;
+}
+
+.formulario textarea {
+    height: 150px;
+    width: 60%;
+    resize: none;
+}
+
+.formulario input[type="submit"] {
+    box-shadow: 0 0 10px greenyellow;
+    background-color: lightblue;
+    position: relative;
+    left: 4rem;
+    color: black;
+    width: auto;
+}
+
+/*Aca finaliza configuracion estilos para Nosotros*/
+
+@media screen and (max-width:960px) {
+
+
+    h2{         
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    justify-content: center;
+}
+
+    .ContainerSoft {
+        display: table;
+    }
+
+    .ContainerSoft ol {
+        text-align: center;
+        list-style: none;
+    }
+
+    .ContainerSoft h4 {
+        color: rgb(0, 0, 0);
+        text-align: center;
+        text-transform: uppercase;
+        text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+    }
+
+
+    .ContainerSoft ol li p {
+        color: aliceblue;
+        font-style: italic;
+    }
+
+    .card {
+        width: 100% !important;
+    }
+
+    footer {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+    }
+
+    .padre-novedades {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
 }
 
 
-.ContainerSoft ol li p {
-    color: aliceblue;
-    font-style: italic;   
-}
+
+@media screen and (max-width:900px) {
+
+    .card {
+        width: 100% !important;
+    }
+
 
 }
 
@@ -305,27 +435,28 @@ main {
         justify-content: end;
     }
 
-    nav {
+    .barraInicio {
         background-color: black;
     }
 
-    nav ul {
+    .barraInicio ul {
         list-style: none;
         display: flex;
         flex-direction: row;
         justify-content: center;
     }
 
-    nav ul li {
+    .barraInicio ul li {
         padding-right: 47px;
+        font-family: "Cascadia Code", sans-serif;
     }
 
-    nav ul li a {
+    .barraInicio ul li a {
         text-decoration: none;
         color: #e0e0e0;
     }
 
-    nav ul li a:hover {
+    .barraInicio ul li a:hover {
         background-color: rgba(200, 255, 2, 0.25);
         border-radius: 7px;
         padding: 2px;
@@ -333,7 +464,7 @@ main {
 
     }
 
-    nav ul li a i:last-child {
+    .barraInicio ul li a i:last-child {
         font-size: 20px;
     }
 
@@ -350,7 +481,7 @@ main {
     }
 
     .card {
-        width: 18rem;
+        width: 100% !important;
     }
 
     .holder li a {
@@ -377,7 +508,14 @@ main {
     }
 
 
+    .caja-padre-hard {
+        display: flex;
+        justify-content: center;
+    }
 
+    .caja-hijo-hard {
+        width: 16%;
+    }
 
     /*aca cierra el responsive de min width 961px*/
 }
