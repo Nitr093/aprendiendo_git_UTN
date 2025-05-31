@@ -1,0 +1,522 @@
+/*FUENTES GOOGLE*/
+/* .comic-relief-regular {
+  font-family: "Comic Relief", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.boldonse-regular {
+  font-family: "Boldonse", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+// <weight>: Use a value from 200 to 700
+// <uniquifier>: Use a unique and descriptive class name
+.cascadia-code-<uniquifier> {
+  font-family: "Cascadia Code", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+// <weight>: Use a value from 100 to 900
+// <uniquifier>: Use a unique and descriptive class name
+.sour-gummy-<uniquifier> {
+  font-family: "Sour Gummy", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+// <weight>: Use a value from 300 to 800
+// <uniquifier>: Use a unique and descriptive class name
+.open-sans-<uniquifier> {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 87.5;
+} */
+
+body {
+    background-color: #e0e0e0;
+    margin: 0;
+}
+
+h1 {
+    font-family: "Boldonse", system-ui !important;
+    color: rgb(173, 247, 2) !important;
+    letter-spacing: 0.2em !important;
+    display: flex !important;
+    justify-content: end !important;
+    padding-right: 10px !important;
+    font-size: 1.4em;
+}
+
+
+#fondo-main {
+    padding: 0 0 0 10px;
+    height: 80px;
+    border-bottom: 1px solid white;
+    background: #5c5c5c;
+    background: radial-gradient(circle, rgba(92, 92, 92, 1) 0%, rgba(56, 56, 56, 1) 23%, rgba(31, 31, 31, 1) 43%, rgba(26, 26, 26, 1) 63%, rgba(18, 18, 18, 1) 86%, rgba(0, 0, 0, 1) 100%);
+
+}
+
+#fondo-main h2 {
+    font-size: 1.4em;
+
+}
+
+h2 {
+    font-family: "Boldonse", system-ui !important;
+    color: rgb(173, 247, 2) !important;
+    letter-spacing: 0.2em !important;      
+    display: flex;
+    justify-content: center;
+    animation-name: Ingreso;
+    animation-duration: 2s;
+    animation-fill-mode: none;
+    transition: all 0.3s ease-in;
+}
+
+
+
+@keyframes Ingreso{
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
+}
+
+
+
+
+header {
+    padding: 16px 0;
+    /*1rem 0*/
+    border-bottom: 2px solid rgb(173, 247, 2);
+    background-image:  url("wallpaperflare.com_wallpaper.jpg");
+
+}
+
+.barraInicio {
+    background-color: black;
+}
+
+.barraInicio ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.barraInicio ul li {
+    padding-right: 47px;
+    text-align: center;
+    font-family: "Cascadia Code", sans-serif;
+}
+
+.barraInicio ul li a {
+    text-decoration: none;
+    color: #e0e0e0;
+}
+
+.barraInicio ul li a:hover {
+    background-color: rgba(200, 255, 2, 0.25);
+    border-radius: 7px;
+    padding: 2px;
+    text-transform: uppercase;
+}
+
+.barraInicio ul li a i {
+    color: rgb(35, 167, 255);
+
+}
+
+.barraInicio ul li a i:last-child {
+    color: rgb(0, 255, 21);
+    font-size: 13.5px;
+}
+
+.activo {
+    background-color: rgba(200, 255, 2, 0.25);
+    border-radius: 7px;
+    padding: 2px;
+    text-transform: uppercase;
+}
+
+footer {
+    background-color: #4e4e4e;
+    color: greenyellow;
+    margin: 2px 0 0 0;
+    padding: 10px 0;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    font-style: italic;
+    gap: 30px;
+    text-align: center;
+}
+
+
+footer a {
+    text-decoration: none;
+    color: greenyellow;
+}
+
+.card {
+    width: 14rem;
+}
+
+main {
+    background-color: rgb(26, 26, 26);
+    margin: 0 auto;
+}
+
+
+.cuerpo-main {
+
+    max-width: 960px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+
+.cuerpo-main a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+
+}
+
+.cuerpo-main a img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.texto-con-fondo {
+    position: absolute;
+    bottom: 0;
+    left: 3;
+    right: 3;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 5px;
+    text-align: center;
+    width: 100%;
+}
+
+.texto-con-fondo h3 {
+    font-size: 0.8em;
+
+}
+
+.texto-con-fondo p {
+    font-size: 0.5em;
+
+}
+
+.ContainerSoft {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    width: 100%;
+}
+
+.ContainerSoft h4 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+}
+
+
+.ContainerSoft ol li p {
+    color: aliceblue;
+    font-style: italic;
+}
+
+.ContainerSoft ol li img {
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.ContainerSoft ol {
+    border: 1.4px solid whitesmoke;
+    margin: 7px;
+}
+
+.CajasHijas {
+    width: 100%;
+}
+
+.ContainerSoft ol li {
+    color: greenyellow;
+    list-style: disc;
+}
+
+/*Aca inicia configuracion estilos para Nosotros*/
+
+.padre-novedades {
+    display: flex;
+    gap: 3%;
+}
+
+.hijo-novedades h4 {
+    text-decoration: underline;
+    text-decoration-color: greenyellow;
+    font-weight: bold;
+}
+
+.hijo-novedades {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+}
+
+.hijo-novedades h4,
+.hijo-novedades p {
+    text-align: center;
+    font-family: "Comic Relief", system-ui;
+    color: rgb(168, 255, 255);
+}
+
+.formulario {
+    padding-right: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.formulario p {
+    color: greenyellow;
+    display: flex;
+    font-style: italic;
+}
+
+.formulario label {
+    width: 80px;
+}
+
+.formulario p input {
+    background-color: #aaaaaa8c;
+    width: 60%;
+    border-radius: 5px;
+    color: #e0e0e0;
+}
+
+.formulario input::placeholder {
+    color: #e0e0e0;
+    font-size: 12px;
+}
+
+.formulario textarea {
+    height: 150px;
+    width: 60%;
+    resize: none;
+}
+
+.formulario input[type="submit"] {
+    box-shadow: 0 0 10px greenyellow;
+    background-color: lightblue;
+    position: relative;
+    left: 4rem;
+    color: black;
+    width: auto;
+}
+
+/*Aca finaliza configuracion estilos para Nosotros*/
+
+@media screen and (max-width:960px) {
+
+
+    h2{         
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    justify-content: center;
+}
+
+    .ContainerSoft {
+        display: table;
+    }
+
+    .ContainerSoft ol {
+        text-align: center;
+        list-style: none;
+    }
+
+    .ContainerSoft h4 {
+        color: rgb(0, 0, 0);
+        text-align: center;
+        text-transform: uppercase;
+        text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+    }
+
+
+    .ContainerSoft ol li p {
+        color: aliceblue;
+        font-style: italic;
+    }
+
+    .card {
+        width: 100% !important;
+    }
+
+    footer {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+    }
+
+    .padre-novedades {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+}
+
+
+
+@media screen and (max-width:900px) {
+
+    .card {
+        width: 100% !important;
+    }
+
+
+}
+
+
+@media screen and (min-width:961px) {
+
+
+
+    body {
+        background-color: #e0e0e0;
+    }
+
+    h1 {
+        font-family: "Boldonse", system-ui;
+        color: rgb(173, 247, 2);
+        letter-spacing: 0.2em;
+        font-size: 2em;
+    }
+
+    h2 {
+        font-family: "Boldonse", system-ui !important;
+        color: rgb(173, 247, 2) !important;
+        letter-spacing: 0.2em !important;
+        padding: 25px 0 !important;
+        text-align: start;
+    }
+
+    header {
+        padding: 16px 0;
+        /*1rem 0*/
+        border-bottom: 2px solid rgb(173, 247, 2);
+        background-image: url("wallpaperflare.com_wallpaper.jpg");
+        display: flex;
+        justify-content: end;
+    }
+
+    .barraInicio {
+        background-color: black;
+    }
+
+    .barraInicio ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .barraInicio ul li {
+        padding-right: 47px;
+        font-family: "Cascadia Code", sans-serif;
+    }
+
+    .barraInicio ul li a {
+        text-decoration: none;
+        color: #e0e0e0;
+    }
+
+    .barraInicio ul li a:hover {
+        background-color: rgba(200, 255, 2, 0.25);
+        border-radius: 7px;
+        padding: 2px;
+        text-transform: uppercase;
+
+    }
+
+    .barraInicio ul li a i:last-child {
+        font-size: 20px;
+    }
+
+    main {
+        background-color: rgb(26, 26, 26);
+    }
+
+    footer {
+        background-color: #4e4e4e;
+        color: greenyellow;
+        margin: 2px 0 0 0;
+        padding: 10px 0 0 0;
+        text-align: center;
+    }
+
+    .card {
+        width: 100% !important;
+    }
+
+    .holder li a {
+        font-size: 1.1em;
+    }
+
+    #fondo-main {
+        padding: 0 0 0 10px;
+        height: 100px;
+    }
+
+    #fondo-main h2 {
+        font-size: 2em;
+    }
+
+    .texto-con-fondo h3 {
+        font-size: 1.2em;
+
+    }
+
+    .texto-con-fondo p {
+        font-size: 1em;
+
+    }
+
+
+    .caja-padre-hard {
+        display: flex;
+        justify-content: center;
+    }
+
+    .caja-hijo-hard {
+        width: 16%;
+    }
+
+    /*aca cierra el responsive de min width 961px*/
+}
