@@ -1,0 +1,152 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #f0f0f0;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+
+a {
+  color: #00B7FF;
+}
+
+header {
+  background-color: #2e64a1;
+  padding: 16px 0;
+  text-align: center;
+  /*1rem 0*/
+}
+
+header h1 {
+  color: white;
+  font-size: 40px;
+  font-weight: 100;
+  display: inline-block;
+  position: relative;
+  margin-left: 10px;
+}
+
+
+header img {
+  border-radius: 20px;
+}
+
+
+nav {
+  background-color: #6da9ed;
+  margin-bottom: 20px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  flex-grow: 1;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 3px 6px;
+  display: block;
+  text-align: center;
+}
+
+nav ul li a.activo {
+  background-color: #4c76a5;
+}
+
+nav ul li a:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+footer {
+  background-color: #ccc;
+  clear: both;
+  color: #333;
+  text-align: center;
+  padding: 5px;
+  margin-top: 20px;
+}
+
+.tituloAdmin {
+  color: rgb(250, 0, 0);
+  font-size: 20px;
+  font-weight: bold;
+  width: max-content;
+  margin: 0;
+  text-transform: uppercase;
+  border-radius: 20px;
+  border: 2px solid #ff0000;
+  display: inline-block;
+}
+
+
+.titilante {
+  animation: titilar 2s infinite, desvanecer 2s infinite;
+  color: #ff0000;
+}
+
+@keyframes titilar {
+
+  0%,
+  100% {
+    color: #ff0000;
+  }
+
+  75% {
+    color: #ffe600;
+  }
+}
+
+@keyframes desvanecer {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.4;
+  }
+
+  90% {
+    opacity: 0.1;
+  }
+}
+
+/* Aca comienza el estilo para index.hbs */
+
+.service-card {
+  border-radius: 10px;
+  border: 2px solid black;
+  text-align: center;
+  width: max-content;
+  display: inline-block;
+  background-color: #6da9ed;
+}
+
+.tituloConocido {
+  color: rgb(6, 0, 83);
+}
+
+form{
+  padding: 7px;
+}
+
+input{
+  padding: 2px;
+}
+
+button{
+  padding: 2px;
+  margin-left: 5px;
+}
+
+button:hover{
+  background-color: #7cc4ff;
+}
