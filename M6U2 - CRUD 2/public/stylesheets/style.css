@@ -10,10 +10,24 @@ a {
   color: #00B7FF;
 }
 
+.stupa {
+  background-color: #2e64a1;
+  padding: 16px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /*1rem 0*/
+}
+
+.cabesal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 header {
   background-color: #2e64a1;
   padding: 16px 0;
-  text-align: center;
   /*1rem 0*/
 }
 
@@ -21,8 +35,8 @@ header h1 {
   color: white;
   font-size: 40px;
   font-weight: 100;
-  display: inline-block;
-  position: relative;
+  display: inline;
+  justify-content: center;
   margin-left: 10px;
 }
 
