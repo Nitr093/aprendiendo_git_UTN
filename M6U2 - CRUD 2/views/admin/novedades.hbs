@@ -1,0 +1,65 @@
+<div class="container" style="margin-top: 50px;">
+
+
+    {{!-- fila 1 --}}
+    <div class="row mb-2">
+        <h2>Hola <span
+                style="color: blueviolet; font-weight: bolder; font-style: italic; text-transform: uppercase;">{{persona}}</span>
+            !</h3>
+            <hr>
+    </div>
+
+
+    {{!-- fila 2 --}}
+    <div class="row my-2">
+        <div class="col-7">
+            <h3>Listado de novedades</h3>
+        </div>
+        <div class="col-5 text-end;">
+            <a class="btn btn-success mb-3" href="/admin/novedades/agregar"><i class="fa fa-plus"
+                    aria-hidden="true"></i> Nuevo</a>
+        </div>
+    </div>
+    {{!-- fin fila 2 --}}
+
+    {{!-- fila 3 --}}
+    <div class="row col">
+        <table class="table">
+            <thead>
+                <tr class="table-dark">
+                    <th scope="col">#</th>
+                    <th scope="col">Titulo</th>
+                    <th>Subtitulo</th>
+                    <th>Cuerpo</th>
+                    <th>Editar</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                {{#each novedades}}
+                <tr>
+                    <th scope="row">{{id}}</th>
+                    <td>{{titulo}}</td>
+                    <td>{{subtitulo}}</td>
+                    <td>{{cuerpo}}</td>
+                    <td class="text-end">
+                        <a class="btn btn-secondary mb-1" style="color:rgb(179, 98, 255); background-color:black;"
+                            href="/admin/novedades/modificar/{{id}}"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                        <a class="btn btn-secondary" style="color:red; background-color:black;"
+                            href="/admin/novedades/eliminar/{{id}}"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                    </td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+
+    </div>
+
+    <hr>
+    {{!-- button deslogeo --}}
+    <p><a class="btn btn-danger mb-5" href='/admin/login/logout'>Cerrar sesion <i class="fas fa-sign-out-alt"></i></a>
+    </p>
+
+
+    
+</div>
