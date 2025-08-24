@@ -3,9 +3,7 @@
 
     {{!-- fila 1 --}}
     <div class="row mb-2">
-        <h2>Hola <span
-                style="color: blueviolet; font-weight: bolder; font-style: italic; text-transform: uppercase;">{{persona}}</span>
-            !</h3>
+        <h2>Hola <span style="color: blueviolet; font-weight: bolder; font-style: italic; text-transform: uppercase;">{{persona}}</span> !</h3>
             <hr>
     </div>
 
@@ -31,6 +29,7 @@
                     <th scope="col">Titulo</th>
                     <th>Subtitulo</th>
                     <th>Cuerpo</th>
+                    <th>Imagen</th>
                     <th>Editar</th>
                 </tr>
             </thead>
@@ -42,6 +41,7 @@
                     <td>{{titulo}}</td>
                     <td>{{subtitulo}}</td>
                     <td>{{cuerpo}}</td>
+                    <td>{{{imagen}}}</td>
                     <td class="text-end">
                         <a class="btn btn-secondary mb-1" style="color:rgb(179, 98, 255); background-color:black;"
                             href="/admin/novedades/modificar/{{id}}"><i class="fa fa-pencil" aria-hidden="true"></i></a>
@@ -61,5 +61,5 @@
     </p>
 
 
-    
+
 </div>

@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col-6 offset-3">
             <h4>Agregar una nueva novedad</h4>
-            <form action="/admin/novedades/agregar" method="post">
+            <form action="/admin/novedades/agregar" method="post" enctype="multipart/form-data">
                 <div class="mb-3 row">
                     <input type="text" class="form-control" placeholder="Titulo" name="titulo">
                 </div>
@@ -12,13 +12,21 @@
                 <div class="mb-3 row">
                     <textarea type="text" class="form-control" placeholder="Cuerpo" name="cuerpo"></textarea>
                 </div>
-                <button class="btn btn-primary"><i class="fa-solid fa-database"></i> Guardar</button>                
+                <div class="mb-3">
+                    <label for="formFile" class="form-label">Subir Imagen <input class="form-control mt-1" type="file"
+                            name="imagen" id="imagen formFile" accept="image/png, image/jpeg, image/jpg" /></label>
+                </div>
+                <button class="btn btn-primary focus-ring focus-ring-success"><i class="fa-solid fa-database"></i> GUARDAR</button>
+                
             </form>
+
             <hr>
-            <a class="btn btn-primary mb-5" href='/admin/novedades'><i class="fa-solid fa-left-long"></i> Volver</a>    
+
+            <a class="btn btn-primary mb-5 focus-ring focus-ring-warning py-1 px-2 text-decoration-none border rounded-2" href='/admin/novedades'><i class="fa-solid fa-left-long"></i> Volver</a>
             {{#if error}}
-                <p>{{message}}</p>
+            <p>{{message}}</p>
             {{/if}}
+
         </div>
     </div>
 </div>
