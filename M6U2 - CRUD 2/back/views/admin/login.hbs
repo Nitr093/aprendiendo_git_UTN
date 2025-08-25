@@ -1,0 +1,41 @@
+<html>
+
+<head>
+  <title>{{title}}</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./../../public/stylesheets/styleAdmin.css" />
+</head>
+
+<body>
+
+  {{! <h1>PROXIMAMENTE VAMOS A TENER EL LOGIN</h1> }}
+  {{! Extiende el layout de administrador si usas layouts }}
+  {{!-- {{!< adminLayout - ./routes/admin/login.js}} --}} <div class="container">
+    <p style="margin-top:50px;">Welcome to the admin panel. Please log in to continue.</p>
+    <div class="row service-card service-icon" >
+      <form action="/admin/login" method="post">
+        <div class="mb-3 row" style="width: 400px;">
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputUser" placeholder="Usuario" name="usuario" />
+          </div>
+        </div>
+        <div class="mb-3 row" style="width: 400px;">
+          <div class="col-sm-10">
+            <input type="password" class="form-control" id="inputPassword" placeholder="Contraseña" name="password" />
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Ingresar</button>
+      </form>
+      {{#if error}}
+      <p>Usuario o clave incorrecto.</p>
+      {{/if}}
+    </div>
+    </div>
+
+    {{! Aquí puedes agregar enlaces o botones para volver al panel principal }}
+    <a href="/" class="btn btn-secondary" style="margin-top:50px;">Volver al
+      Home</a>
+
+</body>
+
+</html>
